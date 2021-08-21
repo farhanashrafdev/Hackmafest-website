@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Hackmafest-website/static/css/main.e040e49b.chunk.css",
-    "main.js": "/Hackmafest-website/static/js/main.ffb64ebe.chunk.js",
-    "main.js.map": "/Hackmafest-website/static/js/main.ffb64ebe.chunk.js.map",
+    "main.js": "/Hackmafest-website/static/js/main.a290c678.chunk.js",
+    "main.js.map": "/Hackmafest-website/static/js/main.a290c678.chunk.js.map",
     "runtime-main.js": "/Hackmafest-website/static/js/runtime-main.cda3fa09.js",
     "runtime-main.js.map": "/Hackmafest-website/static/js/runtime-main.cda3fa09.js.map",
     "static/js/2.21772284.chunk.js": "/Hackmafest-website/static/js/2.21772284.chunk.js",
@@ -53,6 +53,6 @@
     "static/js/runtime-main.cda3fa09.js",
     "static/js/2.21772284.chunk.js",
     "static/css/main.e040e49b.chunk.css",
-    "static/js/main.ffb64ebe.chunk.js"
+    "static/js/main.a290c678.chunk.js"
   ]
 }
