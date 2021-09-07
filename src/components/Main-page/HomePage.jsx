@@ -69,22 +69,17 @@ function TeamMembers(props) {
   );
 }
 
-
-
-
 function FrequentlyAsked(props) {
   return (
     <Row className="sf">
       {props.map(s => (
         <Col className="" sm={12} lg={6} md={6}>
-        <Accordion panels={ s }/>
+          <Accordion panels={s} />
         </Col>
       ))}
     </Row>
   );
 }
-
-
 
 export default function HomePage(props) {
   return (
@@ -120,9 +115,9 @@ export default function HomePage(props) {
 
         {/* ********Frequently asked Questions here ***** */}
         <div className="Myfaqs">
-        {frequentlyAskedQuestions.map(FrequentlyAsked)}
-        {/* ********Frequently asked Questions ending here ***** */}
-         </div>  
+          {frequentlyAskedQuestions.map(FrequentlyAsked)}
+          {/* ********Frequently asked Questions ending here ***** */}
+        </div>
 
         {/* ********Prizes here ***** */}
         <Row className="prizesection">
@@ -154,7 +149,7 @@ export default function HomePage(props) {
         {/* ********Team ending here ***** */}
 
         {/* ********Sponsers here ***** */}
-        <br ></br>
+        <br></br>
         <h1>Our Sponsers Here</h1>
         {TeamInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
