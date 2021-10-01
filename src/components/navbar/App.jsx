@@ -39,16 +39,16 @@ export default class NAVBAR extends React.Component {
                   <span className="links">Home </span>{" "}
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/contact">
                   <span className="links">Sponsors </span>{" "}
                 </Link>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <Link to="/projects">
                   <span className="links">More info </span>{" "}
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
 

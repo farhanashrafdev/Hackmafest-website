@@ -65,7 +65,7 @@ function TeamMembers(props) {
     <Row className="members">
       {props.map(s => (
         <Col className="" sm={12} lg={4} md={4}>
-          <Member name={s.Name} role={s.role} img={s.img} />
+          <Member name={s.Name} role={s.role} img={s.img} github={s.github} linkedin={s.linkedin}/>
         </Col>
       ))}
     </Row>
@@ -161,26 +161,38 @@ export default function HomePage(props) {
           {sponsorLogos.map(SponsorGroup)}
         </Row>
         {/* ********Sponsors ending here ***** */}
-        
-        {/* ********Speakers here ***** */}
-        <br ></br>
+          {/* ********Speakers here ***** */}
+          <br ></br>
+        <Row className="speakersection">
         <h1>Our Speakers Here</h1>
-        {SpeakersInfo.map(TeamMembers)}
+
+        {/* {SpeakersInfo.map(TeamMembers)} */}
+        {/* ********Speakers ending here ***** */}
+        <h2>coming soon</h2>
+        {/* //{SpeakersInfo.map(TeamMembers)} */}
+        </Row>
+        <br ></br>
         {/* ********Team ending here ***** */}
+      
+
 
         <Birds top="120vh" left="0vh" type="" />
 
-        {/* ********Team here ***** */}
+       
+        {/* ********Sessions here ***** */}
+        <Row className="speakersection">
+        <h1>Sessions & Workshops</h1>
+        <h2>Coming Soon!</h2>
+        <br ></br>
+
+        {/* {Session.map(SessionWorkshops)} */}
+        </Row>
+        {/* ********Sessions ending here ***** */}
+ {/* ********Team here ***** */}
         <h1>Our Team</h1>
         {FOOTER.JOIN_TEAM.required && <JoinTeam />}
         {TeamInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
-
-        {/* ********Sessions here ***** */}
-        <h1>Sessions & Workshops</h1>
-        <br ></br>
-        {Session.map(SessionWorkshops)}
-        {/* ********Sessions ending here ***** */}
 
       </Container>
       <Footer />

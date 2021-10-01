@@ -4,14 +4,15 @@ import replit from "./Assets/sponsorsLogos/replit.png";
 import dev from "./Assets/sponsorsLogos/dev-black.png";
 import BU from "./Assets/sponsorsLogos/BU.png";
 import hcb from "./Assets/sponsorsLogos/hackclubbank.png";
-//import interviewC from "./Assets/sponsorsLogos/interview-cake.jpg";
-//import echoAR from "./Assets/sponsorsLogos/echoAR.png";
+import interviewC from "./Assets/sponsorsLogos/interview-cake.jpg";
+import echoAR from "./Assets/sponsorsLogos/echoAR.png";
 //import cfc from "./Assets/sponsorsLogos/cfc.png";
 //import pass from "./Assets/sponsorsLogos/1pass.png";
 //import glimpse from "./Assets/sponsorsLogos/glimpse.png";
 import qoom from "./Assets/sponsorsLogos/qoom.svg";
 //import sublime from "./Assets/sponsorsLogos/sublime.png";
 import egg from "./Assets/sponsorsLogos/egg.png";
+import DO from "./Assets/sponsorsLogos/DO.png";
 //import ll from "./Assets/sponsorsLogos/ll.png";
 //import ACF from "./Assets/sponsorsLogos/ACF.png";
 
@@ -47,11 +48,11 @@ import boy from "./Assets/boy.png";
 
 const TOP_SECTION = {
   TITLE: "HackmaFest",
-  Typed_effect: ["Hack For Community", "Hack For Diversity","Hack For Inclusion"],
+  Typed_effect: ["Hack For Community", "Hack For Diversity","Hack For Inclusion","Win Awesome Prizes","Week long of Learning","Week long of Creation"],
   SHORT_DESCRIPTION:
-    "Join us on 20th October 2021 with over 1000 students from across the world for a weeklong of creation, innovation, & fun. 5 days are dedicated to learning and 36 hours For hacking.",
+    "Join us on 25th October 2021 with over 500 students from across the world for a weeklong of creation, innovation, & fun. 5 days are dedicated to learning and 36 hours For hacking.",
   IMG_SRC: boy,
-  DISCORD_LINK: "",
+  DISCORD_LINK: "https://discord.hackmafest.tech/",
   JUDGES_FORM_LINK:
     "http://speakerform.hackmafest.tech/",
   HACKERS_REGISTRATION_FORM_LINK:
@@ -59,21 +60,21 @@ const TOP_SECTION = {
 };
 
 const SOCIALS = {
-  instagram: "https://www.instagram.hackmafest.tech",
+  instagram: "https://instagram.hackmafest.tech",
   discord: "https://discord.hackmafest.tech",
-  linkedin: "https://www.linkedin.hackmafest.tech/",
+  linkedin: "https://linkedin.hackmafest.tech/",
   twitter: "https://twitter.hackmafest.tech/",
   devpost: "https://devpost.hackmafest.tech/",
-  email: "mailto:hi@limbohacks.tech",
+  email: "mailto:hi@hackmafest.tech",
   mail: "hi@hackmafest.tech"
 };
 
 const MIDDLE_SECTION = {
   TITLE: "What is Hackmafest?",
   LONG_DESCRIPTION:
-    "Hackmafest is a weeklong festival to welcome beginners hacker to hackers communities and hackathons, there are 5 day in-person hackathon followed by a 36 hour long digital hackathon will be held on October 29th & 30th , We calls for hackers, artists, coders, designers, tech evangelists, creatives, and developers from all disciplines to take a part to win awesome prizes and collaborate with other developers . Throughout the weekend hackers at Hackmafest will have unique opportunities to learn from each other trying hands in new technologies, on the most latest equipment provided by the organizers during hackathon We are determined to have an all-inclusive and diverse group of students attending.",
+    "Hackmafest is a weeklong festival to welcome beginners hacker to hackers communities and hackathons, there is 5-day in-person hackathon followed by a 36-hour long digital hackathon will be held on October 29th & 30th, We call for hackers, artists, coders, designers, tech evangelists, creatives, and developers from all disciplines to take part to win awesome prizes and collaborate with other developers. Throughout the weekend hackers at Hackmafest will have unique opportunities to learn from each other trying hands in new technologies, on the most latest equipment provided by the organizers during the hackathon We are determined to have an all-inclusive and diverse group of students attending.",
   LOGO_EFFECT: true,
-  LOGO: "LIMBOO"
+  LOGO: hackmafest
 };
 
 const FOOTER = {
@@ -92,6 +93,10 @@ const FOOTER = {
   Terms_of_use: {
     required: true,
     src: "https://tom.hackmafest.tech"
+  },
+  Code_of_conduct: {
+    required: true,
+    src: "https://hackclub.com/conduct"
   }
 };
 
@@ -188,28 +193,28 @@ const TeamInfo = [
       img: farhan
     },
     {
-      Name: "Awais",
+      Name: "Haris Ali",
       role: "Organizer",
       github: "",
       linkedin: "",
-      img: awais
+      img: haris
     },
-    {
-      Name: "Usman Hamid",
-      role: "Organizer",
-      github: "",
-      linkedin: "",
-      img: usman
-    }
-  ],
-  [
-    //Array 2
     {
       Name: "Sameer",
       role: "Organizer",
       github: "",
       linkedin: "",
       img: sameer
+    }
+  ],
+  [
+    //Array 2
+    {
+      Name: "Hamid Azeem",
+      role: "Graphics and Media Team head",
+      github: "",
+      linkedin: "",
+      img: hamid
     },
     {
       Name: "Sidra",
@@ -272,16 +277,29 @@ const TeamInfo = [
 const Session = [
   [
     {
-      title: "Building Tech Careers through the Web Dev",
-      speaker: "Farhan Ashraf",
+      title: "Workshop Name and schedule coming soon",
+      speaker: "Speaker Name",
       img: php,
-      role: "Chair Person, IEEE BULC",
-      date: "21/04/2021",
-      time: "8:30 PM",
-      feature1: "KickStart your programming",
-      feature2: "Booast You Portfolio",
-      feature3: "Get to Know your Php Laraval",
+      role: "Intro",
+      date: "Date ",
+      time: "Time",
+      feature1: "Feature 1",
+      feature2: "Feature 2",
+      feature3: "Feature 3",
     },
+
+    // {
+    //   title: "Advanced Web Dev",
+    //   speaker: "Haris Ali",
+    //   img: php,
+    //   role: "Software Engineer",
+    //   date: "21/04/2021",
+    //   time: "8:30 PM",
+    //   feature1: "KickStart your programming",
+    //   feature2: "Intro to Web",
+    //   feature3: "Get to Know React",
+    // },
+    
 
     {
       title: "Advanced Web Dev",
@@ -293,57 +311,58 @@ const Session = [
       feature1: "KickStart your programming",
       feature2: "Intro to Web",
       feature3: "Get to Know React",
+      github: "www.github/HarisAli-git.com"
     },
-    
-    {
-      title: "Advanced Web Dev",
-      speaker: "Haris Ali",
-      img: php,
-      role: "Software Engineer",
-      date: "21/04/2021",
-      time: "8:30 PM",
-      feature1: "KickStart your programming",
-      feature2: "Intro to Web",
-      feature3: "Get to Know React",
-    },
-  ],
-  [
-    {
-      title: "Building Tech Careers through the Web Dev",
-      speaker: "Farhan Ashraf",
-      img: php,
-      role: "Chair Person, IEEE BULC",
-      date: "21/04/2021",
-      time: "8:30 PM",
-      feature1: "KickStart your programming",
-      feature2: "Booast You Portfolio",
-      feature3: "Get to Know your Php Laraval",
-    },
+    // {
+    //   title: "Advanced Web Dev",
+    //   speaker: "Haris Ali",
+    //   img: php,
+    //   role: "Software Engineer",
+    //   date: "21/04/2021",
+    //   time: "8:30 PM",
+    //   feature1: "KickStart your programming",
+    //   feature2: "Intro to Web",
+    //   feature3: "Get to Know React",
+    // },
 
-    {
-      title: "Advanced Web Dev",
-      speaker: "Haris Ali",
-      img: php,
-      role: "Software Engineer",
-      date: "21/04/2021",
-      time: "8:30 PM",
-      feature1: "KickStart your programming",
-      feature2: "Intro to Web",
-      feature3: "Get to Know React",
-    },
-    
-    {
-      title: "Advanced Web Dev",
-      speaker: "Haris Ali",
-      img: php,
-      role: "Software Engineer",
-      date: "21/04/2021",
-      time: "8:30 PM",
-      feature1: "KickStart your programming",
-      feature2: "Intro to Web",
-      feature3: "Get to Know React",
-    },
   ],
+  // [
+  //   {
+  //     title: "Building Tech Careers through the Web Dev",
+  //     speaker: "Farhan Ashraf",
+  //     img: php,
+  //     role: "Chair Person, IEEE BULC",
+  //     date: "21/04/2021",
+  //     time: "8:30 PM",
+  //     feature1: "KickStart your programming",
+  //     feature2: "Booast You Portfolio",
+  //     feature3: "Get to Know your Php Laraval",
+  //   },
+
+  //   {
+  //     title: "Advanced Web Dev",
+  //     speaker: "Haris Ali",
+  //     img: php,
+  //     role: "Software Engineer",
+  //     date: "21/04/2021",
+  //     time: "8:30 PM",
+  //     feature1: "KickStart your programming",
+  //     feature2: "Intro to Web",
+  //     feature3: "Get to Know React",
+  //   },
+    
+  //   {
+  //     title: "Advanced Web Dev",
+  //     speaker: "Haris Ali",
+  //     img: php,
+  //     role: "Software Engineer",
+  //     date: "21/04/2021",
+  //     time: "8:30 PM",
+  //     feature1: "KickStart your programming",
+  //     feature2: "Intro to Web",
+  //     feature3: "Get to Know React",
+  //   },
+  //],
 ];
 
 const SpeakersInfo = [
@@ -360,21 +379,21 @@ const SpeakersInfo = [
       Name: "Haris Ali",
       role: "Co-Lead",
       github: "https://github.com/HarisAli-git",
-      linkedin: "https://www.linkedin.com/harisa73",
+      linkedin: "https://www.linkedin.com/in/harisa73",
       img: haris
     },
     {
       Name: "Awais",
       role: "Organizer",
-      github: "",
-      linkedin: "",
+      github: "https://github.com/HarisAli-git",
+      linkedin: "https://www.linkedin.com/in/harisa73",
       img: awais
     },
     {
       Name: "Usman Hamid",
       role: "Organizer",
-      github: "",
-      linkedin: "",
+      github: "https://github.com/HarisAli-git",
+      linkedin: "https://www.linkedin.com/in/harisa73",
       img: usman
     }
   ]
@@ -396,9 +415,10 @@ const SpeakersInfo = [
 const sponsorLogos = [
  // [{src: qoom}, {src: Replit}, {src: egg}]
    [{src: qoom}, {src: replit}, {src: egg}], //Array 1
-  [{src: BU}, {src: hcb}, {src: dev}] //Array 2
+  [{src: BU}, {src: hcb}, {src: dev}], //Array 2
  //Array 3
- // [{src: egg}, {src: ll}, {src: ACF}] //Array 4
+  [{src: interviewC}, {src: DO}, {src: echoAR}] //Array 4
+  //[{src: }, {src: cfc}, {src: echoAR}] //Array 4
 ];
 
 /** Instructions
@@ -441,7 +461,7 @@ const frequentlyAskedQuestions  = [
       ,
       {
         label: "What are the conduct of guidlines?",
-        content: "We strongly follow the HackClub code of conduct, Our team members will enforce this code throughout the event. "
+        content: "We strongly follow the HackClub code of conduct, Our team members will enforce this code throughout the event. To See the code of conduct please visit the Website Footer"
       }
     ]
   ],

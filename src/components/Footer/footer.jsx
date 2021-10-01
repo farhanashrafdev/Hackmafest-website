@@ -111,7 +111,16 @@ export default function Footer() {
               <p>Terms of Use</p>
             </a>
           )}
-          <p>Made with ❤️ by Mriceflame</p>
+          {FOOTER.Code_of_conduct.required && (
+            <a
+              href= "https://conduct.hackmafest.tech"
+              target="blank"
+              className="privacy-policy"
+            >
+              <p>Code of Conduct</p>
+            </a>
+          )}
+          <a href="https://github.com/mriceflame"><p>Made with ( ❤️ && 😢 ) by Mriceflame</p></a>
 
         </div>
       {template &&<GithubTemplate/>}
