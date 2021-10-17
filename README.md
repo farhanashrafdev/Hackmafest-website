@@ -1,6 +1,7 @@
 # HackmaFest-Website
 Website for HackmaFest.
 
+This template can be used by any hackathon organizers, so its a great project to contribute on. 
 
 This is our code of HackmaFest website's which is a hackathon happening in October 25 th to 31th 2021.
 

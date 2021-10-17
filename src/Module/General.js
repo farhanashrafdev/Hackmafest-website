@@ -13,8 +13,16 @@ import qoom from "./Assets/sponsorsLogos/qoom.svg";
 //import sublime from "./Assets/sponsorsLogos/sublime.png";
 import egg from "./Assets/sponsorsLogos/egg.png";
 import DO from "./Assets/sponsorsLogos/DO.png";
-//import ll from "./Assets/sponsorsLogos/ll.png";
+import ll from "./Assets/sponsorsLogos/ll.png";
 //import ACF from "./Assets/sponsorsLogos/ACF.png";
+import devfolio from "./Assets/sponsorsLogos/Devfolio.png";
+import polygon from "./Assets/sponsorsLogos/polygon.png";
+import filecoin from "./Assets/sponsorsLogos/filecoin.png";
+import tezos from "./Assets/sponsorsLogos/tezos.png";
+import pass from "./Assets/sponsorsLogos/1pass.png";
+import celo from "./Assets/sponsorsLogos/celo.png";
+
+
 
 /** Put all your sponsors logo inside folder `sponsorLogos`
  * and import them in the above and update `src` in sponsorLogos
@@ -28,7 +36,7 @@ import sidra from "./Assets/teami/Sidra.png";
 import usama from "./Assets/teami/usama.png";
 import usman from "./Assets/teami/usman.png";
 import asim from "./Assets/teami/asim.png";
-import taskeen from "./Assets/teami/taskeen.png";
+//import taskeen from "./Assets/teami/taskeen.png";
 import tauqeer from "./Assets/teami/tauqeer.png";
 import sameer from "./Assets/teami/sameer.png";
 import awais from "./Assets/teami/awais.png"
@@ -36,6 +44,8 @@ import hamid from "./Assets/teami/hamid.png";
 import azeem from "./Assets/teami/azeem.jpeg";
 import haris from "./Assets/sponsers/harisali.jpg";
 import php from "./Assets/sessions/php.jpg";
+import anton from "./Assets/judges/anton.jpg";
+import timofey from "./Assets/judges/tim.jpg";
 
 
 
@@ -64,7 +74,7 @@ const SOCIALS = {
   discord: "https://discord.hackmafest.tech",
   linkedin: "https://linkedin.hackmafest.tech/",
   twitter: "https://twitter.hackmafest.tech/",
-  devpost: "https://devpost.hackmafest.tech/",
+  devpost: "https://hackmafest.devfolio.co/",
   email: "mailto:hi@hackmafest.tech",
   mail: "hi@hackmafest.tech"
 };
@@ -72,7 +82,7 @@ const SOCIALS = {
 const MIDDLE_SECTION = {
   TITLE: "What is Hackmafest?",
   LONG_DESCRIPTION:
-    "Hackmafest is a weeklong festival to welcome beginners hacker to hackers communities and hackathons, there is 5-day in-person hackathon followed by a 36-hour long digital hackathon will be held on October 29th & 30th, We call for hackers, artists, coders, designers, tech evangelists, creatives, and developers from all disciplines to take part to win awesome prizes and collaborate with other developers. Throughout the weekend hackers at Hackmafest will have unique opportunities to learn from each other trying hands in new technologies, on the most latest equipment provided by the organizers during the hackathon We are determined to have an all-inclusive and diverse group of students attending.",
+    "Hackmafest is a weeklong festival to welcome beginners hacker to hackers communities and hackathons, there is 7-day in-person(with limited attendees) and also Digital hackathon will be held on October 25th-31st, We call for hackers, artists, coders, designers, tech evangelists, creatives, and developers from all disciplines to take part to win awesome prizes and collaborate with other developers. Throughout the weekend hackers at Hackmafest will have unique opportunities to learn from each other trying hands in new technologies, on the most latest equipment provided by the organizers during the hackathon We are determined to have an all-inclusive and diverse group of students attending.",
   LOGO_EFFECT: true,
   LOGO: hackmafest
 };
@@ -96,7 +106,7 @@ const FOOTER = {
   },
   Code_of_conduct: {
     required: true,
-    src: "https://hackclub.com/conduct"
+    src: "https://conduct.hackmafest.tech"
   }
 };
 
@@ -120,60 +130,53 @@ const Prizeinfo = [
       type: "Prizes Detail are Coming soon",
       content:
         "There will be some amazing prizes dont worry :)"
+     },
+{
+  icon: <i class="first fas fa-4x fa-trophy"></i>,
+  type: "",
+  content:
+    "$150 for the best hack built on Ethereum, or $200 for the best hack built on Ethereum + Polygon"
+ }, 
+ {
+  icon: <i class="first fas fa-4x fa-trophy"></i>,
+  type: "",
+  content:
+    "$250 for best Dapp built on Tezos Continuity Grant opportunity for exceptional builders"
+ }
+  ],
+   [
+     //Array 2
+     {
+       icon: <i class="fab fourth fa-3x fa-wpbeginner"></i>,
+       type: "Best Solo",
+       content:
+         "$250 for best Dapp built on Celo"
+     },
+   {
+       icon: <i class="first fas fa-4x fa-trophy"></i>,
+       type: " Best Beginner",
+       content: "Your project will qualify for this category if hackmafest is your first hackathon."
+     },
+    {
+     icon: <i class=" fifth fa-3x fas fa-book-open"></i>,
+    type: "Best UI/UX",
+      content: "Project with most creative designs will be UI/UX track"
+    }
+  ],
+   [
+     //Array 3
+     {
+       icon: <i class="fas fa-4x sixth fa-male"></i>,
+       type: "Best Web App with Qoom",
+       content: "Must use qoom in your project to win this category"
+     },
+     {
+       icon: <i class="fas fa-user-friends seventh fa-3x "></i>,
+       type: "Best use of filecoin",
+       content: "$250 for best use of IPFS and/or Filecoin And Microgrants up to 5000 USD, open grants up to 50,000 USD"
      }
-  //  {
-  //   icon: <i class="first fas fa-4x fa-trophy"></i>,
-  //   type: "overall First",
-  //   content:
-  //     "First Overall prize will be given to a project that outstands all other submissions"
-  //  }
-,
-  //   {
-  //     icon: <i class=" second fas fa-4x fa-medal"></i>,
-  //     type: "overall Second",
-  //     content:
-  //       "Second Overall prize will be given to the second best project of the hackathon"
-  //   },
-  //   {
-  //     icon: <i class=" third fas fa-4x fa-skiing-nordic"></i>,
-  //     type: "Third Second",
-  //     content:
-  //       "Best third overall project of the hackathon will win some awesome prizes"
-  //   }
-  // ],
-  // [
-  //   //Array 2
-  //   {
-  //     icon: <i class="fab fourth fa-3x fa-wpbeginner"></i>,
-  //     type: "Best Solo",
-  //     content:
-  //       "You project will qualify for this prize if you participate alone without a team though we encourage you to participate with a team"
-  //   },
-  //   {
-  //     icon: <i class="first fas fa-4x fa-trophy"></i>,
-  //     type: " Best Beginner",
-  //     content: "Your project will qualify for this category if hackmafest is your first hackathon."
-  //   },
-  //   {
-  //     icon: <i class=" fifth fa-3x fas fa-book-open"></i>,
-  //     type: "Best UI/UX",
-  //     content: "Project with most creative designs will be UI/UX track"
-  //   }
-  // ],
-  // [
-  //   //Array 3
-  //   {
-  //     icon: <i class="fas fa-4x sixth fa-male"></i>,
-  //     type: "Best Web App with Qoom",
-  //     content: "Must use qoom in your project to win this category"
-  //   },
-  //   {
-  //     icon: <i class="fas fa-user-friends seventh fa-3x "></i>,
-  //     type: "More prizes",
-  //     content: "More prizes will be revealed later"
-  //   }
-  // ]
-    ]
+   ]
+    
 ];
 
 /** Instructions
@@ -200,68 +203,20 @@ const TeamInfo = [
       img: haris
     },
     {
-      Name: "Sameer",
-      role: "Organizer",
+      Name: "Sidra Wajid",
+      role: "Head Promotions",
       github: "",
-      linkedin: "",
-      img: sameer
-    }
+      linkedin: "https://www.linkedin.com/in/sidra-wajid-778172214/",
+      img: sidra
+    },
   ],
   [
     //Array 2
     {
-      Name: "Hamid Azeem",
-      role: "Graphics and Media Team head",
-      github: "",
-      linkedin: "",
-      img: hamid
-    },
-    {
-      Name: "Sidra",
-      role: "Head Promotions",
-      github: "",
-      linkedin: "",
-      img: sidra
-    },
-    {
-      Name: "Tauqeer",
-      role: "Event Head",
-      github: "",
-      linkedin: "",
-      img: tauqeer
-    }
-  ],
-  [
-    //Array 3
-    {
-      Name: "Usama Rafay",
-      role: "Technical Support Team head",
-      github: "",
-      linkedin: "",
-      img: usama
-    },
-    {
-      Name: "Asim Nawaz",
-      role: "Resource Team head",
-      github: "",
-      linkedin: "",
-      img: asim
-    },
-    {
-      Name: "Taskeen Fatima",
-      role: "Community Manager",
-      github: "",
-      linkedin: "",
-      img: taskeen
-    }
-
-  ],
-  [
-    {
       Name: "Azeem Farooqi",
       role: "Content Writers Team head",
       github: "",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/azeem-farooqi-2ab588222",
       img: azeem
     },
     {
@@ -270,8 +225,54 @@ const TeamInfo = [
       github: "",
       linkedin: "",
       img: hamid
+    },
+    {
+      Name: "Sameer Tahir",
+      role: "Community Manager",
+      github: "https://github.com/",
+      linkedin: "https://www.linkedin.com/",
+      img: sameer
     }
-  ],
+  
+  ]
+  //,
+  //  [
+  //    //Array 3
+  //    {
+  //     Name: "Usama Rafay",
+  //     role: "Technical Support Team head",
+  //     github: "https://github.com/UsamaRaffay300",
+  //     linkedin: "https://www.linkedin.com/in/usama-raffay-6b6291174",
+  //     img: usama
+  //   },
+  //   {
+  //     Name: "Asim Nawaz",
+  //     role: "Resource Team head",
+  //     github: "",
+  //     linkedin: "",
+  //     img: asim
+  //    },
+    
+
+  // ],
+  // [
+    
+    // {
+    //   Name: "Tauqeer",
+    //   role: "Event Head",
+    //   github: "https://www.linkedin.com/in/muhammad-tauqeer-176a16198/",
+    //   linkedin: "https://www.linkedin.com/in/muhammad-tauqeer-176a16198/",
+    //   img: tauqeer
+    // },
+    // {
+    //   Name: "Sameer",
+    //   role: "Organizer",
+    //   github: "https://github.com/Sameer-Tahir",
+    //   linkedin: "https://www.linkedin.com/in/sameer-tahir-2568661b4/",
+    //   img: sameer
+    // }
+    
+  // ],
 ];
 
 const Session = [
@@ -288,17 +289,17 @@ const Session = [
       feature3: "Feature 3",
     },
 
-    // {
-    //   title: "Advanced Web Dev",
-    //   speaker: "Haris Ali",
-    //   img: php,
-    //   role: "Software Engineer",
-    //   date: "21/04/2021",
-    //   time: "8:30 PM",
-    //   feature1: "KickStart your programming",
-    //   feature2: "Intro to Web",
-    //   feature3: "Get to Know React",
-    // },
+    {
+      title: "Advanced Web Dev",
+      speaker: "Haris Ali",
+      img: php,
+      role: "Software Engineer",
+      date: "21/04/2021",
+      time: "8:30 PM",
+      feature1: "KickStart your programming",
+      feature2: "Intro to Web",
+      feature3: "Get to Know React",
+    },
     
 
     {
@@ -313,17 +314,18 @@ const Session = [
       feature3: "Get to Know React",
       github: "www.github/HarisAli-git.com"
     },
-    // {
-    //   title: "Advanced Web Dev",
-    //   speaker: "Haris Ali",
-    //   img: php,
-    //   role: "Software Engineer",
-    //   date: "21/04/2021",
-    //   time: "8:30 PM",
-    //   feature1: "KickStart your programming",
-    //   feature2: "Intro to Web",
-    //   feature3: "Get to Know React",
-    // },
+
+    {
+      title: "Advanced Web Dev",
+      speaker: "Haris Ali",
+      img: php,
+      role: "Software Engineer",
+      date: "21/04/2021",
+      time: "8:30 PM",
+      feature1: "KickStart your programming",
+      feature2: "Intro to Web",
+      feature3: "Get to Know React",
+    },
 
   ],
   // [
@@ -369,18 +371,18 @@ const SpeakersInfo = [
   [
     //Array 1
     {
-      Name: "Farhan Ashraf",
-      role: "Lead Organizer",
+      Name: "Anton Yakutovich",
+      role: "",
       github: "https://github.com/mriceflame",
       linkedin: "https://www.linkedin.com/in/s4a/",
-      img: farhan
+      img: anton
     },
     {
-      Name: "Haris Ali",
-      role: "Co-Lead",
+      Name: "Timofey Krestyanov",
+      role: "Senior App Developer/Team Lead",
       github: "https://github.com/HarisAli-git",
-      linkedin: "https://www.linkedin.com/in/harisa73",
-      img: haris
+      linkedin: "https://www.linkedin.com/in/timofeykrestyanov/",
+      img: timofey
     },
     {
       Name: "Awais",
@@ -413,11 +415,15 @@ const SpeakersInfo = [
 // ];
 
 const sponsorLogos = [
+
+[{src: devfolio}, {src: polygon}, {src: celo}],
  // [{src: qoom}, {src: Replit}, {src: egg}]
-   [{src: qoom}, {src: replit}, {src: egg}], //Array 1
-  [{src: BU}, {src: hcb}, {src: dev}], //Array 2
+   [{src: tezos}, {src: filecoin}, {src: egg}], //Array 1
+  [{src: qoom}, {src: hcb}, {src: echoAR}], //Array 2
  //Array 3
-  [{src: interviewC}, {src: DO}, {src: echoAR}] //Array 4
+ [{src: BU}, {src: pass}, {src:interviewC}],
+  [{src:  ll}, {src: DO}, {src: dev}] //Array 4
+  //[{src: replit}] //Array 4
   //[{src: }, {src: cfc}, {src: echoAR}] //Array 4
 ];
 

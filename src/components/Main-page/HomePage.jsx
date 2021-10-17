@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect,useState} from "react";
 import {Myinfo} from "../Top-division-components/Top-division-components.jsx";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
@@ -104,6 +104,17 @@ function SessionWorkshops(props){
 }
 
 export default function HomePage(props) {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://apply.devfolio.co/v2/sdk.js';
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    }
+  }, []);
+  
   return (
     <div className="Whole_div" style={{backgroundImage: `url(${pattern})`}}>
       <div className="color_sectiom">
@@ -168,7 +179,7 @@ export default function HomePage(props) {
 
         {/* {SpeakersInfo.map(TeamMembers)} */}
         {/* ********Speakers ending here ***** */}
-        <h2>coming soon</h2>
+        <h2>Coming Soon</h2>
         {/* //{SpeakersInfo.map(TeamMembers)} */}
         </Row>
         <br ></br>
@@ -182,9 +193,13 @@ export default function HomePage(props) {
         {/* ********Sessions here ***** */}
         <Row className="speakersection">
         <h1>Sessions & Workshops</h1>
-        <h2>Coming Soon!</h2>
-        <br ></br>
-
+        {/* ********Sessions here *****
+        
+        {/*<br ></br>
+        {Session.map(SessionWorkshops)}
+        {/* ********Sessions ending here ***** */}
+        {/* <br ></br> */}
+        <h2>Coming Soon</h2>
         {/* {Session.map(SessionWorkshops)} */}
         </Row>
         {/* ********Sessions ending here ***** */}
