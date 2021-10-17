@@ -1,33 +1,35 @@
 # HackmaFest-Website
+
 Website for HackmaFest.
 
-This template can be used by any hackathon organizers, so its a great project to contribute on. 
+This template can be used by any hackathon organizers, so its a great project to
+contribute on.
 
-This is our code of HackmaFest website's which is a hackathon happening in October 25 th to 31th 2021.
+This is our code of HackmaFest website's which is a hackathon happening in
+October 25 th to 31th 2021.
 
 The website is deployed on HackmaFest.tech
 
 Any improvement in the website will be accepted.
 
-Feel Free to contribute no matter what its a big contirbution or a small contributions we are happy to accept all.
+Feel Free to contribute no matter what its a big contirbution or a small
+contributions we are happy to accept all.
 
 Lets code with :heart:
 
-# HackmaFest Website ⚡️ 
+# HackmaFest Website ⚡️
 
 ![](https://img.shields.io/github/repo-size/HackmaFest/HackmaFest-Website)
 ![](https://img.shields.io/github/commit-activity/m/HackmaFest/HackmaFest-Website)
 
-
-
 ## A clean, beautiful and mobile responsive portfolio template for your upcoming hackathon!
 
+\*Join HackmaFest Discord [click here](https://discord.gg/EPaEejfKgv)\*\*
 
-
-
-*Join HackmaFest Discord [click here](https://discord.gg/EPaEejfKgv)** 
-
-Just change `src/Module/general.js` to get your hackathon portfolio. Customize and your sponsors, team-member and judges by adding images in `src/Module/Assets` . Feel free to use it as-is or personalize it as much as you want.
+Just change `src/Module/general.js` to get your hackathon portfolio. Customize
+and your sponsors, team-member and judges by adding images in
+`src/Module/Assets` . Feel free to use it as-is or personalize it as much as you
+want.
 
 ## Table of Contents
 
@@ -41,6 +43,7 @@ Just change `src/Module/general.js` to get your hackathon portfolio. Customize a
 ---
 
 ## [Website Sections]()
+
 ✔️ General hackathon Info.
 
 ✔️ Registrations links.
@@ -69,12 +72,13 @@ Just change `src/Module/general.js` to get your hackathon portfolio. Customize a
 
 To view a live example, [click here](https://hackmafest.tech).
 
-
 ## [Getting Started]()
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+These instructions will get you a copy of the project up and running on your
+local machine for development and testing purposes.
 
-You'll need `Git` and `Node.js` (which comes with npm) installed on your computer.
+You'll need `Git` and `Node.js` (which comes with npm) installed on your
+computer.
 
 ```bash
 node@v10.16.0 or higher
@@ -83,12 +87,11 @@ git@2.17.1 or higher
 
 ```
 
-
 1. Clone the repo.
+
 ```bash
 git clone https://github.com/HackmaFest/HackmaFest-Website.git
 ```
-
 
 2.Starting the Client application.
 
@@ -121,7 +124,7 @@ npm start
 
 <img src="https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white"/>
 
-<img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"/> 
+<img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"/>
 
 </p>
 
@@ -143,15 +146,20 @@ npm start
   </tr>
 </table>
 
-
 ## BASE CODE:
-The base code of the repo was cloned from Limbo hacks 8/21/2021. 
-According to Owners of this code mentioned " Feel free to use it as-is or personalize it as much as you want." , so we have customized the Website according to HackmaFest Needs. And we are happy to allow everyone to customize the website as much as they want or use it as it is for thier use. we wont claim any copy rights or anythings.
-We have so far added Speakers and Workshops Sections.
 
-Thank you Limbo Hacks for making this amazing template. 
-We have made all the changes with :heart:
+The base code of the repo was cloned from Limbo hacks 8/21/2021. According to
+Owners of this code mentioned " Feel free to use it as-is or personalize it as
+much as you want." , so we have customized the Website according to HackmaFest
+Needs. And we are happy to allow everyone to customize the website as much as
+they want or use it as it is for thier use. we wont claim any copy rights or
+anythings. We have so far added Speakers and Workshops Sections.
+
+Thank you Limbo Hacks for making this amazing template. We have made all the
+changes with :heart:
 
 ## Still Confused?
-For more details on customization feel free to read detailed readme on Limbo hacks own template page :
+
+For more details on customization feel free to read detailed readme on Limbo
+hacks own template page :
 https://github.com/Limbo-Hacks/Hackathon-website-template

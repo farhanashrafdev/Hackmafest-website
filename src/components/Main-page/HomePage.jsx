@@ -1,4 +1,4 @@
-import React,{useEffect,useState} from "react";
+import React, {useEffect, useState} from "react";
 import {Myinfo} from "../Top-division-components/Top-division-components.jsx";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
@@ -65,56 +65,59 @@ function TeamMembers(props) {
     <Row className="members">
       {props.map(s => (
         <Col className="" sm={12} lg={4} md={4}>
-          <Member name={s.Name} role={s.role} img={s.img} github={s.github} linkedin={s.linkedin}/>
+          <Member
+            name={s.Name}
+            role={s.role}
+            img={s.img}
+            github={s.github}
+            linkedin={s.linkedin}
+          />
         </Col>
       ))}
     </Row>
   );
 }
-
-
-
 
 function FrequentlyAsked(props) {
   return (
     <Row className="sf">
       {props.map(s => (
         <Col className="" sm={12} lg={6} md={6}>
-        <Accordion panels={ s }/>
+          <Accordion panels={s} />
         </Col>
       ))}
     </Row>
   );
 }
 
-function SessionWorkshops(props){
+function SessionWorkshops(props) {
   return (
-    <Container fluid>{
-    <Row className="members">
+    <Container fluid>
       {
-      props.map(s => (
-        <Col className="" sm={12} lg={4} md={4}>
-        <DisplaySession params={ s }/>
-        </Col>
-      ))
+        <Row className="members">
+          {props.map(s => (
+            <Col className="" sm={12} lg={4} md={4}>
+              <DisplaySession params={s} />
+            </Col>
+          ))}
+        </Row>
       }
-    </Row>
-  }</Container>
+    </Container>
   );
 }
 
 export default function HomePage(props) {
   useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://apply.devfolio.co/v2/sdk.js';
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
     script.async = true;
     script.defer = true;
     document.body.appendChild(script);
     return () => {
       document.body.removeChild(script);
-    }
+    };
   }, []);
-  
+
   return (
     <div className="Whole_div" style={{backgroundImage: `url(${pattern})`}}>
       <div className="color_sectiom">
@@ -148,9 +151,9 @@ export default function HomePage(props) {
 
         {/* ********Frequently asked Questions here ***** */}
         <div className="Myfaqs">
-        {frequentlyAskedQuestions.map(FrequentlyAsked)}
-        {/* ********Frequently asked Questions ending here ***** */}
-         </div>  
+          {frequentlyAskedQuestions.map(FrequentlyAsked)}
+          {/* ********Frequently asked Questions ending here ***** */}
+        </div>
 
         {/* ********Prizes here ***** */}
         <Row className="prizesection">
@@ -172,43 +175,39 @@ export default function HomePage(props) {
           {sponsorLogos.map(SponsorGroup)}
         </Row>
         {/* ********Sponsors ending here ***** */}
-          {/* ********Speakers here ***** */}
-          <br ></br>
+        {/* ********Speakers here ***** */}
+        <br></br>
         <Row className="speakersection">
-        <h1>Our Speakers Here</h1>
+          <h1>Our Speakers Here</h1>
 
-        {/* {SpeakersInfo.map(TeamMembers)} */}
-        {/* ********Speakers ending here ***** */}
-        <h2>Coming Soon</h2>
-        {/* //{SpeakersInfo.map(TeamMembers)} */}
+          {/* {SpeakersInfo.map(TeamMembers)} */}
+          {/* ********Speakers ending here ***** */}
+          <h2>Coming Soon</h2>
+          {/* //{SpeakersInfo.map(TeamMembers)} */}
         </Row>
-        <br ></br>
+        <br></br>
         {/* ********Team ending here ***** */}
-      
-
 
         <Birds top="120vh" left="0vh" type="" />
 
-       
         {/* ********Sessions here ***** */}
         <Row className="speakersection">
-        <h1>Sessions & Workshops</h1>
-        {/* ********Sessions here *****
-        
+          <h1>Sessions & Workshops</h1>
+          {/* ********Sessions here *****
+
         {/*<br ></br>
         {Session.map(SessionWorkshops)}
         {/* ********Sessions ending here ***** */}
-        {/* <br ></br> */}
-        <h2>Coming Soon</h2>
-        {/* {Session.map(SessionWorkshops)} */}
+          {/* <br ></br> */}
+          <h2>Coming Soon</h2>
+          {/* {Session.map(SessionWorkshops)} */}
         </Row>
         {/* ********Sessions ending here ***** */}
- {/* ********Team here ***** */}
+        {/* ********Team here ***** */}
         <h1>Our Team</h1>
         {FOOTER.JOIN_TEAM.required && <JoinTeam />}
         {TeamInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
-
       </Container>
       <Footer />
     </div>
