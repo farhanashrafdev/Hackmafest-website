@@ -47,11 +47,11 @@ function Myinfo() {
       </a> */}
 
       <div
-        class="apply-button" 
+        class="apply-button"
         data-hackathon-slug="hackmafest"
         data-button-theme="dark"
       ></div>
-      </div>
+    </div>
   );
 }
 

@@ -27,7 +27,7 @@ import qoom from "./Assets/sponsorsLogos/qoom.svg";
 import replit from "./Assets/sponsorsLogos/replit.png";
 import tezos from "./Assets/sponsorsLogos/tezos.png";
 import asim from "./Assets/teami/asim.png";
-import awais from "./Assets/teami/awais.png"
+import awais from "./Assets/teami/awais.png";
 import azeem from "./Assets/teami/azeem.jpeg";
 /**
  * Put all your sponsors logo inside folder `sponsorLogos`
@@ -53,45 +53,53 @@ import usama from "./Assets/teami/usama.png";
 import usman from "./Assets/teami/usman.png";
 
 const TOP_SECTION = {
-  TITLE : "HackmaFest",
-  Typed_effect : [
-    "Hack For Community", "Hack For Diversity", "Hack For Inclusion",
-    "Win Awesome Prizes", "Week long of Learning", "Week long of Creation"
+  TITLE: "HackmaFest",
+  Typed_effect: [
+    "Hack For Community",
+    "Hack For Diversity",
+    "Hack For Inclusion",
+    "Win Awesome Prizes",
+    "Week long of Learning",
+    "Week long of Creation"
   ],
-  SHORT_DESCRIPTION :
-      "Join us on 25th October 2021 with over 500 students from across the world for a weeklong of creation, innovation, & fun. 5 days are dedicated to learning and 36 hours For hacking.",
-  IMG_SRC : boy,
-  DISCORD_LINK : "https://discord.hackmafest.tech/",
-  JUDGES_FORM_LINK : "http://speakerform.hackmafest.tech/",
-  HACKERS_REGISTRATION_FORM_LINK : "http://hackerform.hackmafest.tech/"
+  SHORT_DESCRIPTION:
+    "Join us on 25th October 2021 with over 500 students from across the world for a weeklong of creation, innovation, & fun. 5 days are dedicated to learning and 36 hours For hacking.",
+  IMG_SRC: boy,
+  DISCORD_LINK: "https://discord.hackmafest.tech/",
+  JUDGES_FORM_LINK: "http://speakerform.hackmafest.tech/",
+  HACKERS_REGISTRATION_FORM_LINK: "http://hackerform.hackmafest.tech/"
 };
 
 const SOCIALS = {
-  instagram : "https://instagram.hackmafest.tech",
-  discord : "https://discord.hackmafest.tech",
-  linkedin : "https://linkedin.hackmafest.tech/",
-  twitter : "https://twitter.hackmafest.tech/",
-  devpost : "https://hackmafest.devfolio.co/",
-  email : "mailto:hi@hackmafest.tech",
-  mail : "hi@hackmafest.tech"
+  instagram: "https://instagram.hackmafest.tech",
+  discord: "https://discord.hackmafest.tech",
+  linkedin: "https://linkedin.hackmafest.tech/",
+  twitter: "https://twitter.hackmafest.tech/",
+  devpost: "https://hackmafest.devfolio.co/",
+  email: "mailto:hi@hackmafest.tech",
+  mail: "hi@hackmafest.tech"
 };
 
 const MIDDLE_SECTION = {
-  TITLE : "What is Hackmafest?",
-  LONG_DESCRIPTION :
-      "Hackmafest is a weeklong festival to welcome beginners hacker to hackers communities and hackathons, there is 7-day in-person(with limited attendees) and also Digital hackathon will be held on October 25th-31st, We call for hackers, artists, coders, designers, tech evangelists, creatives, and developers from all disciplines to take part to win awesome prizes and collaborate with other developers. Throughout the weekend hackers at Hackmafest will have unique opportunities to learn from each other trying hands in new technologies, on the most latest equipment provided by the organizers during the hackathon We are determined to have an all-inclusive and diverse group of students attending.",
-  LOGO_EFFECT : true,
-  LOGO : hackmafest
+  TITLE: "What is Hackmafest?",
+  LONG_DESCRIPTION:
+    "Hackmafest is a weeklong festival to welcome beginners hacker to hackers communities and hackathons, there is 7-day in-person(with limited attendees) and also Digital hackathon will be held on October 25th-31st, We call for hackers, artists, coders, designers, tech evangelists, creatives, and developers from all disciplines to take part to win awesome prizes and collaborate with other developers. Throughout the weekend hackers at Hackmafest will have unique opportunities to learn from each other trying hands in new technologies, on the most latest equipment provided by the organizers during the hackathon We are determined to have an all-inclusive and diverse group of students attending.",
+  LOGO_EFFECT: true,
+  LOGO: hackmafest
 };
 
 const FOOTER = {
-  VOLUNTEERING_FORM :
-      {required : true, src : "https://volunteerform.hackmafest.tech/"},
-  JOIN_TEAM : {required : true, src : "http://speakerform.hackmafest.tech/"},
-  Privacy_policy :
-      {required : true, src : "https://privacypolicy.hackmafest.tech/"},
-  Terms_of_use : {required : true, src : "https://tom.hackmafest.tech"},
-  Code_of_conduct : {required : true, src : "https://conduct.hackmafest.tech"}
+  VOLUNTEERING_FORM: {
+    required: true,
+    src: "https://volunteerform.hackmafest.tech/"
+  },
+  JOIN_TEAM: {required: true, src: "http://speakerform.hackmafest.tech/"},
+  Privacy_policy: {
+    required: true,
+    src: "https://privacypolicy.hackmafest.tech/"
+  },
+  Terms_of_use: {required: true, src: "https://tom.hackmafest.tech"},
+  Code_of_conduct: {required: true, src: "https://conduct.hackmafest.tech"}
 };
 
 /**
@@ -113,55 +121,54 @@ const Prizeinfo = [
     {
       icon: <i class="first fas fa-4x fa-trophy"></i>,
       type: "Prizes Detail are Coming soon",
-      content:
-        "There will be some amazing prizes dont worry :)"
-     },
-{
-  icon: <i class="first fas fa-4x fa-trophy"></i>,
-  type: "",
-  content:
-    "$150 for the best hack built on Ethereum, or $200 for the best hack built on Ethereum + Polygon"
- }, 
- {
-  icon: < i class="first fas fa-4x fa-trophy"></i>,
-  type: "",
-  content:
-    "$250 for best Dapp built on Tezos Continuity Grant opportunity for exceptional builders"
- }
-  ],
-   [
-     //Array 2
-     {
-       icon: <i class="fab fourth fa-3x fa-wpbeginner"></i>,
-       type: "Best Solo",
-       content:
-         "$250 for best Dapp built on Celo"
-     },
-   {
-       icon: <i class="first fas fa-4x fa-trophy"></i>,
-       type: " Best Beginner",
-       content: "Your project will qualify for this category if hackmafest is your first hackathon."
-     },
+      content: "There will be some amazing prizes dont worry :)"
+    },
     {
-     icon: <i class=" fifth fa-3x fas fa-book-open"></i>,
-    type: "Best UI/UX",
+      icon: <i class="first fas fa-4x fa-trophy"></i>,
+      type: "",
+      content:
+        "$150 for the best hack built on Ethereum, or $200 for the best hack built on Ethereum + Polygon"
+    },
+    {
+      icon: <i class="first fas fa-4x fa-trophy"></i>,
+      type: "",
+      content:
+        "$250 for best Dapp built on Tezos Continuity Grant opportunity for exceptional builders"
+    }
+  ],
+  [
+    //Array 2
+    {
+      icon: <i class="fab fourth fa-3x fa-wpbeginner"></i>,
+      type: "Best Solo",
+      content: "$250 for best Dapp built on Celo"
+    },
+    {
+      icon: <i class="first fas fa-4x fa-trophy"></i>,
+      type: " Best Beginner",
+      content:
+        "Your project will qualify for this category if hackmafest is your first hackathon."
+    },
+    {
+      icon: <i class=" fifth fa-3x fas fa-book-open"></i>,
+      type: "Best UI/UX",
       content: "Project with most creative designs will be UI/UX track"
     }
   ],
-   [
-     //Array 3
-     {
-       icon: <i class="fas fa-4x sixth fa-male"></i>,
-       type: "Best Web App with Qoom",
-       content: "Must use qoom in your project to win this category"
-     },
-     {
-       icon: <i class="fas fa-user-friends seventh fa-3x "></i>,
-       type: "Best use of filecoin",
-       content: "$250 for best use of IPFS and/or Filecoin And Microgrants up to 5000 USD, open grants up to 50,000 USD"
-     }
-   ]
-    
+  [
+    //Array 3
+    {
+      icon: <i class="fas fa-4x sixth fa-male"></i>,
+      type: "Best Web App with Qoom",
+      content: "Must use qoom in your project to win this category"
+    },
+    {
+      icon: <i class="fas fa-user-friends seventh fa-3x "></i>,
+      type: "Best use of filecoin",
+      content:
+        "$250 for best use of IPFS and/or Filecoin And Microgrants up to 5000 USD, open grants up to 50,000 USD"
+    }
+  ]
 ];
 
 /** Instructions
@@ -193,7 +200,7 @@ const TeamInfo = [
       github: "",
       linkedin: "https://www.linkedin.com/in/sidra-wajid-778172214/",
       img: sidra
-    },
+    }
   ],
   [
     //Array 2
@@ -218,7 +225,6 @@ const TeamInfo = [
       linkedin: "https://www.linkedin.com/",
       img: sameer
     }
-  
   ]
   //,
   //  [
@@ -237,242 +243,240 @@ const TeamInfo = [
   //     linkedin: "",
   //     img: asim
   //    },
-    
 
   // ],
   // [
-    
-    // {
-    //   Name: "Tauqeer",
-    //   role: "Event Head",
-    //   github: "https://www.linkedin.com/in/muhammad-tauqeer-176a16198/",
-    //   linkedin: "https://www.linkedin.com/in/muhammad-tauqeer-176a16198/",
-    //   img: tauqeer
-    // },
-    // {
-    //   Name: "Sameer",
-    //   role: "Organizer",
-    //   github: "https://github.com/Sameer-Tahir",
-    //   linkedin: "https://www.linkedin.com/in/sameer-tahir-2568661b4/",
-    //   img: sameer
-    // }
-    
+
+  // {
+  //   Name: "Tauqeer",
+  //   role: "Event Head",
+  //   github: "https://www.linkedin.com/in/muhammad-tauqeer-176a16198/",
+  //   linkedin: "https://www.linkedin.com/in/muhammad-tauqeer-176a16198/",
+  //   img: tauqeer
+  // },
+  // {
+  //   Name: "Sameer",
+  //   role: "Organizer",
+  //   github: "https://github.com/Sameer-Tahir",
+  //   linkedin: "https://www.linkedin.com/in/sameer-tahir-2568661b4/",
+  //   img: sameer
+  // }
+
   // ],
 ];
 
-  const Session = [
-    [
-      {
-        title : "Workshop Name and schedule coming soon",
-        speaker : "Speaker Name",
-        img : php,
-        role : "Intro",
-        date : "Date ",
-        time : "Time",
-        feature1 : "Feature 1",
-        feature2 : "Feature 2",
-        feature3 : "Feature 3",
-      },
+const Session = [
+  [
+    {
+      title: "Workshop Name and schedule coming soon",
+      speaker: "Speaker Name",
+      img: php,
+      role: "Intro",
+      date: "Date ",
+      time: "Time",
+      feature1: "Feature 1",
+      feature2: "Feature 2",
+      feature3: "Feature 3"
+    },
 
-      {
-        title : "Advanced Web Dev",
-        speaker : "Haris Ali",
-        img : php,
-        role : "Software Engineer",
-        date : "21/04/2021",
-        time : "8:30 PM",
-        feature1 : "KickStart your programming",
-        feature2 : "Intro to Web",
-        feature3 : "Get to Know React",
-      },
+    {
+      title: "Advanced Web Dev",
+      speaker: "Haris Ali",
+      img: php,
+      role: "Software Engineer",
+      date: "21/04/2021",
+      time: "8:30 PM",
+      feature1: "KickStart your programming",
+      feature2: "Intro to Web",
+      feature3: "Get to Know React"
+    },
 
-      {
-        title : "Advanced Web Dev",
-        speaker : "Haris Ali",
-        img : php,
-        role : "Software Engineer",
-        date : "21/04/2021",
-        time : "8:30 PM",
-        feature1 : "KickStart your programming",
-        feature2 : "Intro to Web",
-        feature3 : "Get to Know React",
-        github : "www.github/HarisAli-git.com"
-      },
+    {
+      title: "Advanced Web Dev",
+      speaker: "Haris Ali",
+      img: php,
+      role: "Software Engineer",
+      date: "21/04/2021",
+      time: "8:30 PM",
+      feature1: "KickStart your programming",
+      feature2: "Intro to Web",
+      feature3: "Get to Know React",
+      github: "www.github/HarisAli-git.com"
+    },
 
-      {
-        title : "Advanced Web Dev",
-        speaker : "Haris Ali",
-        img : php,
-        role : "Software Engineer",
-        date : "21/04/2021",
-        time : "8:30 PM",
-        feature1 : "KickStart your programming",
-        feature2 : "Intro to Web",
-        feature3 : "Get to Know React",
-      },
+    {
+      title: "Advanced Web Dev",
+      speaker: "Haris Ali",
+      img: php,
+      role: "Software Engineer",
+      date: "21/04/2021",
+      time: "8:30 PM",
+      feature1: "KickStart your programming",
+      feature2: "Intro to Web",
+      feature3: "Get to Know React"
+    }
+  ]
+  // [
+  //   {
+  //     title: "Building Tech Careers through the Web Dev",
+  //     speaker: "Farhan Ashraf",
+  //     img: php,
+  //     role: "Chair Person, IEEE BULC",
+  //     date: "21/04/2021",
+  //     time: "8:30 PM",
+  //     feature1: "KickStart your programming",
+  //     feature2: "Booast You Portfolio",
+  //     feature3: "Get to Know your Php Laraval",
+  //   },
 
-    ],
-    // [
-    //   {
-    //     title: "Building Tech Careers through the Web Dev",
-    //     speaker: "Farhan Ashraf",
-    //     img: php,
-    //     role: "Chair Person, IEEE BULC",
-    //     date: "21/04/2021",
-    //     time: "8:30 PM",
-    //     feature1: "KickStart your programming",
-    //     feature2: "Booast You Portfolio",
-    //     feature3: "Get to Know your Php Laraval",
-    //   },
+  //   {
+  //     title: "Advanced Web Dev",
+  //     speaker: "Haris Ali",
+  //     img: php,
+  //     role: "Software Engineer",
+  //     date: "21/04/2021",
+  //     time: "8:30 PM",
+  //     feature1: "KickStart your programming",
+  //     feature2: "Intro to Web",
+  //     feature3: "Get to Know React",
+  //   },
 
-    //   {
-    //     title: "Advanced Web Dev",
-    //     speaker: "Haris Ali",
-    //     img: php,
-    //     role: "Software Engineer",
-    //     date: "21/04/2021",
-    //     time: "8:30 PM",
-    //     feature1: "KickStart your programming",
-    //     feature2: "Intro to Web",
-    //     feature3: "Get to Know React",
-    //   },
+  //   {
+  //     title: "Advanced Web Dev",
+  //     speaker: "Haris Ali",
+  //     img: php,
+  //     role: "Software Engineer",
+  //     date: "21/04/2021",
+  //     time: "8:30 PM",
+  //     feature1: "KickStart your programming",
+  //     feature2: "Intro to Web",
+  //     feature3: "Get to Know React",
+  //   },
+  //],
+];
 
-    //   {
-    //     title: "Advanced Web Dev",
-    //     speaker: "Haris Ali",
-    //     img: php,
-    //     role: "Software Engineer",
-    //     date: "21/04/2021",
-    //     time: "8:30 PM",
-    //     feature1: "KickStart your programming",
-    //     feature2: "Intro to Web",
-    //     feature3: "Get to Know React",
-    //   },
-    //],
-  ];
-
-  const SpeakersInfo = [ [
+const SpeakersInfo = [
+  [
     // Array 1
     {
-      Name : "Anton Yakutovich",
-      role : "",
-      github : "https://github.com/mriceflame",
-      linkedin : "https://www.linkedin.com/in/s4a/",
-      img : anton
+      Name: "Anton Yakutovich",
+      role: "",
+      github: "https://github.com/mriceflame",
+      linkedin: "https://www.linkedin.com/in/s4a/",
+      img: anton
     },
     {
-      Name : "Timofey Krestyanov",
-      role : "Senior App Developer/Team Lead",
-      github : "https://github.com/HarisAli-git",
-      linkedin : "https://www.linkedin.com/in/timofeykrestyanov/",
-      img : timofey
+      Name: "Timofey Krestyanov",
+      role: "Senior App Developer/Team Lead",
+      github: "https://github.com/HarisAli-git",
+      linkedin: "https://www.linkedin.com/in/timofeykrestyanov/",
+      img: timofey
     },
     {
-      Name : "Awais",
-      role : "Organizer",
-      github : "https://github.com/HarisAli-git",
-      linkedin : "https://www.linkedin.com/in/harisa73",
-      img : awais
+      Name: "Awais",
+      role: "Organizer",
+      github: "https://github.com/HarisAli-git",
+      linkedin: "https://www.linkedin.com/in/harisa73",
+      img: awais
     },
     {
-      Name : "Usman Hamid",
-      role : "Organizer",
-      github : "https://github.com/HarisAli-git",
-      linkedin : "https://www.linkedin.com/in/harisa73",
-      img : usman
+      Name: "Usman Hamid",
+      role: "Organizer",
+      github: "https://github.com/HarisAli-git",
+      linkedin: "https://www.linkedin.com/in/harisa73",
+      img: usman
     }
-  ] ];
+  ]
+];
 
-  /**
-   * Instructions
-   * Only put 3 logos per array inside `sponsorLogos`, you can
-   * create as many arrays you want all logos will be rendered
-   * in a group of 3.
-   */
+/**
+ * Instructions
+ * Only put 3 logos per array inside `sponsorLogos`, you can
+ * create as many arrays you want all logos will be rendered
+ * in a group of 3.
+ */
 
-  // const sponsorLogos = [
-  //  [{src: qoom, {src: Replit}, {src: egg}], //Array 1
-  //   [{src: BU}, {src: hcb}, {src: dev}], //Array 2
-  // //  [{src: interviewC}, {src: pass}, {src: glimpse}], //Array 3
-  //  // [{src: egg}, {src: ll}, {src: ACF}] //Array 4
-  // ];
+// const sponsorLogos = [
+//  [{src: qoom, {src: Replit}, {src: egg}], //Array 1
+//   [{src: BU}, {src: hcb}, {src: dev}], //Array 2
+// //  [{src: interviewC}, {src: pass}, {src: glimpse}], //Array 3
+//  // [{src: egg}, {src: ll}, {src: ACF}] //Array 4
+// ];
 
-  const sponsorLogos = [
+const sponsorLogos = [
+  [{src: devfolio}, {src: polygon}, {src: celo}],
+  // [{src: qoom}, {src: Replit}, {src: egg}]
+  [{src: tezos}, {src: filecoin}, {src: egg}], // Array 1
+  [{src: qoom}, {src: hcb}, {src: echoAR}], // Array 2
+  // Array 3
+  [{src: BU}, {src: pass}, {src: interviewC}],
+  [{src: ll}, {src: DO}, {src: dev}] // Array 4
+  //[{src: replit}] //Array 4
+  //[{src: }, {src: cfc}, {src: echoAR}] //Array 4
+];
 
-    [ {src : devfolio}, {src : polygon}, {src : celo} ],
-    // [{src: qoom}, {src: Replit}, {src: egg}]
-    [ {src : tezos}, {src : filecoin}, {src : egg} ], // Array 1
-    [ {src : qoom}, {src : hcb}, {src : echoAR} ],    // Array 2
-    // Array 3
-    [ {src : BU}, {src : pass}, {src : interviewC} ],
-    [ {src : ll}, {src : DO}, {src : dev} ] // Array 4
-    //[{src: replit}] //Array 4
-    //[{src: }, {src: cfc}, {src: echoAR}] //Array 4
-  ];
-
-  /**
-   * Instructions
-   * Follow the strcuture provided below to add as many as FAQ's you want
-   */
-  const frequentlyAskedQuestions = [
+/**
+ * Instructions
+ * Follow the strcuture provided below to add as many as FAQ's you want
+ */
+const frequentlyAskedQuestions = [
+  [
     [
-      [
-        {
-          label : "What is a hackathon?",
-          content :
-              'Hackathons are community events, where you get to interact with students from all around the world as well as forming teams to create future tech'
-        },
-        {
-          label : "I have no idea what coding is?",
-          content :
-              "Thats why you must attend our event, we will guide you through everything with awesome workshops,tech talk and many more"
-        },
-        {
-          label : "Do i need to pay any money?",
-          content :
-              "Absolutely not ! our event is free and open for all , if incase anyone asks for money you can dm any of our moderator"
-        },
-        {
-          label : "I dont have a team to participate?",
-          content :
-              "You dont need one, prior to our event in discord you will meet many hackers exactly like you and join to form a team, if not you can participate alone and fun fact we are running special best solo prize."
-        }
-      ],
-      [
-        {
-          label : "How to participate?",
-          content :
-              "All you need is to fill our form above and join Discord, we will guide you through everything there"
-        },
-        {
-          label : "I have more doubts?",
-          content :
-              "Reach us directly at (hi@hackmafest.tech) we would happy to help you."
-        },
-        {
-          label : "Can i volunteer?",
-          content :
-              "Yes we are looking for volunteers, fill the form (in footer section) we would be glad to have you."
-        },
-        {
-          label : "What are the conduct of guidlines?",
-          content :
-              "We strongly follow the HackClub code of conduct, Our team members will enforce this code throughout the event. To See the code of conduct please visit the Website Footer"
-        }
-      ]
+      {
+        label: "What is a hackathon?",
+        content:
+          "Hackathons are community events, where you get to interact with students from all around the world as well as forming teams to create future tech"
+      },
+      {
+        label: "I have no idea what coding is?",
+        content:
+          "Thats why you must attend our event, we will guide you through everything with awesome workshops,tech talk and many more"
+      },
+      {
+        label: "Do i need to pay any money?",
+        content:
+          "Absolutely not ! our event is free and open for all , if incase anyone asks for money you can dm any of our moderator"
+      },
+      {
+        label: "I dont have a team to participate?",
+        content:
+          "You dont need one, prior to our event in discord you will meet many hackers exactly like you and join to form a team, if not you can participate alone and fun fact we are running special best solo prize."
+      }
     ],
+    [
+      {
+        label: "How to participate?",
+        content:
+          "All you need is to fill our form above and join Discord, we will guide you through everything there"
+      },
+      {
+        label: "I have more doubts?",
+        content:
+          "Reach us directly at (hi@hackmafest.tech) we would happy to help you."
+      },
+      {
+        label: "Can i volunteer?",
+        content:
+          "Yes we are looking for volunteers, fill the form (in footer section) we would be glad to have you."
+      },
+      {
+        label: "What are the conduct of guidlines?",
+        content:
+          "We strongly follow the HackClub code of conduct, Our team members will enforce this code throughout the event. To See the code of conduct please visit the Website Footer"
+      }
+    ]
+  ]
+];
 
-  ];
-
-  export {
-    TOP_SECTION,
-    MIDDLE_SECTION,
-    SOCIALS,
-    FOOTER,
-    Session,
-    Prizeinfo,
-    sponsorLogos,
-    SpeakersInfo,
-    TeamInfo,
-    frequentlyAskedQuestions
-  };
+export {
+  TOP_SECTION,
+  MIDDLE_SECTION,
+  SOCIALS,
+  FOOTER,
+  Session,
+  Prizeinfo,
+  sponsorLogos,
+  SpeakersInfo,
+  TeamInfo,
+  frequentlyAskedQuestions
+};

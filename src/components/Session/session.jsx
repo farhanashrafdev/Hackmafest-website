@@ -1,11 +1,10 @@
-import React from "react"
-import { ListGroup, ListGroupItem, Card } from "react-bootstrap";
-import "./session.css"
-import { Jumbotron } from "react-bootstrap";
-import { Button } from "react-bootstrap";
-function DisplaySession(props)
-{
-    return(
+import React from "react";
+import {ListGroup, ListGroupItem, Card} from "react-bootstrap";
+import "./session.css";
+import {Jumbotron} from "react-bootstrap";
+import {Button} from "react-bootstrap";
+function DisplaySession(props) {
+  return (
     // <div className="divCard">
     // <div className="alignCard">
     // <Card style={{ width: '18rem' }}>
@@ -30,16 +29,14 @@ function DisplaySession(props)
     // <br></br>
     // </div>
     <Jumbotron>
-    <h1>{props.params.title}</h1>
-    <Card.Img variant="top" src={props.params.img} id="img-props-card" />
-    <p>
-    {props.params.speaker}
-    </p>
-    <p>
+      <h1>{props.params.title}</h1>
+      <Card.Img variant="top" src={props.params.img} id="img-props-card" />
+      <p>{props.params.speaker}</p>
+      <p>
         <Button variant="primary">Learn more</Button>
-    </p>
+      </p>
     </Jumbotron>
-    );
+  );
 }
 
 export default DisplaySession;
